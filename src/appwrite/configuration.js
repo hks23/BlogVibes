@@ -97,7 +97,7 @@ export class Service{
     }
 
     //file uplaod service
-    async uplaodFile(file){
+    async uploadFile(file){
         try {
             return await this.bucket.createFile(
                 config.appwriteBucketId,

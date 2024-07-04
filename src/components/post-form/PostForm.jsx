@@ -48,7 +48,7 @@ export default function PostForm({ post }) {
             }
         }
     };
-    //replacing spaces with dash
+
     const slugTransform = useCallback((value) => {
         if (value && typeof value === "string")
             return value
@@ -72,7 +72,6 @@ export default function PostForm({ post }) {
 
     return (
         <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
-               {/* //left part of the form  */}
             <div className="w-2/3 px-2">
                 <Input
                     label="Title :"
@@ -91,7 +90,6 @@ export default function PostForm({ post }) {
                 />
                 <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
             </div>
-            {/* //right part of the form  */}
             <div className="w-1/3 px-2">
                 <Input
                     label="Featured Image :"
