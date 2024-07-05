@@ -12,6 +12,7 @@ import EditPost from './pages/EditPost.jsx'
 import Post from './pages/Post.jsx'
 import Home from './pages/Home.jsx'
 import Signup from './pages/Signup.jsx'
+import ErrorElement from './components/ErrorElement.jsx'
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
       {
         path: "/post/:slug",
         element: <Post />,
+      },
+      {
+        path: "*",
+        element: <ErrorElement />
       }
     ]
   }
