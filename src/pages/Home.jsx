@@ -28,7 +28,7 @@ function Home() {
                         <div className="p-2 w-full ">
                             <h1 className="text-2xl font-bold drop-shadow-2xl hover:text-gray-100 ">
                             <div class="relative inline-block p-4 bg-blue-500 rounded-sm  transition duration-100 ease-in-out hover:bg-blue-300 hover:backdrop-blur-md">
-                                <span class="text-white hover:text-black" >Login to read</span>
+                                <span class="text-white hover:text-black" > <a href="blog-vibes.vercel.app/login">Login</a> to read</span>
                             </div>
                             <div class="wrap py-12 my-12 mx-12">
                                 <div className="box border-4 border-solid drop-shadow-2xl bg-violet-400 blur-sm"><img src={imageBox1} width="220px" className="flex items-center justify-center mx-3.5 py-4" alt="" /><br />ARTICLE 1</div>
