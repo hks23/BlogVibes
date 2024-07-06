@@ -25,8 +25,8 @@ function Footer() {
                 Company
               </h3>
               <ul className="space-y-2">
-                <li><Link to="/about" className="text-sm hover:text-gray-200">About Us</Link></li>
-                <li><Link to="/team" className="text-sm hover:text-gray-200">Team</Link></li>
+                <li><a className="text-sm hover:text-blue-200" href="https://github.com/hks23" target='_blank'>Github</a></li>
+                <li><a className="text-sm hover:text-blue-200" href="https://www.linkedin.com/in/harsh-kumar-singh-826b09207/" target='_blank'>LinkedIn</a></li>
                 <li><Link to="/careers" className="text-sm hover:text-gray-200">Careers</Link></li>
               </ul>
             </div>
@@ -38,7 +38,7 @@ function Footer() {
               </h3>
               <ul className="space-y-2">
                 <li><Link to="/help" className="text-sm hover:text-gray-200">Help Center</Link></li>
-                <li><Link to="/contact" className="text-sm hover:text-gray-200">Contact Us</Link></li>
+                <li><Link to="/contact" className="text-sm hover:text-gray-200">Contact</Link></li>
                 <li><Link to="/faq" className="text-sm hover:text-gray-200">FAQ</Link></li>
               </ul>
             </div>
