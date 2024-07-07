@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, PostForm } from '../components';
 import appwriteService from '../appwrite/configuration';
 import { useNavigate, useParams } from 'react-router-dom';
+import Post from './Post'
 
 function EditPost() {
   const [post, setPost] = useState(null);
@@ -20,7 +21,7 @@ function EditPost() {
     } else {
       navigate('/');
     }
-  }, [slug, navigate]);
+  }, [slug, navigate, Post]);
 
   const updatePost = async (data) => {
     // Example of updating post

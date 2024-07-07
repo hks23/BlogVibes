@@ -10,3 +10,26 @@
   height: px;
 }
 
+.xyz{
+  font-family: cursive;
+}
+
+.auto-type::after{
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: white;
+  width: 100%;
+  animation: typing 3s steps(15) alternate infinite, line 1s infinite;
+}
+@keyframes typing {
+  to{
+    width: 0%;
+  }
+}
+@keyframes line{
+  50%{
+    color: transparent;
+  }
+}
+
