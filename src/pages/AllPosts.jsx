@@ -15,8 +15,9 @@ function AllPosts() {
         <Container>
             <div className='flex flex-wrap'>
                 {posts.map((post) => (
-                    <div key={post.$id} className='p-2 w-1/4 shadow-2xl hover:shadow-sky-400 space-x-11 hover:backdrop-blur-2xl
-                    '>
+                    <div key={post.$id} className='p-3 w-1/4 shadow-2xl hover:shadow-sky-400 space-x-11 hover:backdrop-blur-2xl
+                    '>  
+                    {/* padidnng changes to p-3 for demo chage back to p-2 */}
                         <PostCard {...post} />
                     </div>
                 ))}
